@@ -11,7 +11,7 @@ def download_data():
   gdown.download(url,output,quiet=False)
   
 download_data()
-data=pd.read_csv("data.csv",sep=";",nrows=1000000,parse_dates=["INDICE_NOMINAL","INDICE_REAL"])
+data=pd.read_csv("data.csv",sep=";",nrows=1000000,parse_dates=["FECHA"])
 st.dataframe(data.head(20))
-fecha=data["INDICE_NOMINAL"]
-st.line_chart(fecha)
+fec=data["INDICE_NOMINAL"]
+st.line_chart(fec)
