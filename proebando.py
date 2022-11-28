@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import gdown
 
-#1nZkoRX8956K9lybIb-ARHZ3Jk4QLiDw0
+#1V2Yzr8a8eTI2tX1qz_i9ZY9jntBpDIlF
 @st.experimental_memo
 def download_data():
   #https://drive.google.com/uc?id=YOURFILEID
-  url="https://drive.google.com/uc?id=1nZkoRX8956K9lybIb-ARHZ3Jk4QLiDw0"
+  url="https://drive.google.com/uc?id=1V2Yzr8a8eTI2tX1qz_i9ZY9jntBpDIlF"
   output='data.csv'
   gdown.download(url,output,quiet=False)
   
