@@ -13,5 +13,5 @@ def download_data():
 download_data()
 data=pd.read_csv("data.csv",sep=";",nrows=1000000,parse_dates=["INDICE_NOMINAL","INDICE_REAL"])
 st.dataframe(data.head(20))
-fecha=data["FECHA"]
+fecha=data["INDICE_NOMINAL"]
 st.line_chart(fecha)
